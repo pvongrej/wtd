@@ -6,8 +6,9 @@
 
 body {
     font-family: Tahoma, Arial, sans-serif;
-    background-color: #050a14;
+    background-color: #030812;
     color: #eaeaea;
+
 }
 
 .header {
@@ -67,7 +68,7 @@ body {
     min-height: 520px;
     padding: 90px 0 70px 0;
     background-image:
-            linear-gradient(to right, #050a14aa 0%, #050a14cc 35%, #050a14ff 100%),
+            linear-gradient(to right, #050a14aa 40%, #050a14cc 60%, #050a14ff 100%),
             url("../images/main-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -145,7 +146,7 @@ body {
 }
 
 .devices {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: #050a14;
 }
 
@@ -205,7 +206,7 @@ body {
 }
 
 .devices-card-description {
-    color: #b7c0d1;
+    color: #7f8aa3;
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 24px;
@@ -230,6 +231,25 @@ body {
 .devices-card-button:hover {
     background-color: #f5a623;
     color: #050a14;
+}
+
+.footer {
+    background: #030812;
+    color: #7f8aa3;
+    font-size: 16px;
+    padding: 18px 20px;
+    border-top: 1px solid #ffffff14;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-container {
+    width: 96%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 800px) {

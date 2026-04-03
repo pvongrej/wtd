@@ -1,30 +1,46 @@
 # My Phone Journey
 
-A simple web project created for the
-Web Technologies and Design (WTD) course
+A web project created for the
+**Web Technologies and Design (WTD)** course
 at Pan-European University.
 
-It shows a personal overview of mobile phones
-used between 1999 and 2024.
+This project presents a personal timeline of mobile devices
+used between **1999 and 2024**, from early feature phones
+to modern smartphones.
 
 ---
 
-# Features
+## Features
 
-- basic page layout using HTML5
-- header with navigation menu
-- hover and active states in navigation
-
----
-
-# Technologies
-
-- HTML5
-- CSS3
+* responsive homepage layout
+* main section with background image and statistics
+* navigation menu with hover and active states
+* current and planned device overview
 
 ---
 
-# Author
+## Technologies
 
-Peter Vongrej, 2026
+* HTML5
+* CSS3
 
+---
+
+## Project Structure
+
+* `index.html` – homepage
+* `css/styles.css` – main styles
+* `images/` – assets and background images
+
+--
+
+## Live Demo
+
+https://pvongrej.github.io/wtd/
+
+---
+
+## Author
+
+Peter Vongrej
+2026

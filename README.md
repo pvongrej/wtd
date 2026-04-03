@@ -12,27 +12,27 @@ to modern smartphones.
 
 ## Features
 
-* responsive homepage layout
-* main section with background image and statistics
-* navigation menu with hover and active states
-* current and planned device overview
+- responsive homepage layout
+- hero section with background image and statistics
+- navigation menu with hover and active states
+- current and planned device overview
 
 ---
 
 ## Technologies
 
-* HTML5
-* CSS3
+- HTML5
+- CSS3
 
 ---
 
 ## Project Structure
 
-* `index.html` – homepage
-* `css/styles.css` – main styles
-* `images/` – assets and background images
+- `index.html` – homepage
+- `css/styles.css` – main styles
+- `images/` – assets and background images
 
---
+---
 
 ## Live Demo
 

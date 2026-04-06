@@ -145,6 +145,7 @@ body {
     letter-spacing: 3px;
 }
 
+
 .devices {
     padding: 30px 0;
     background-color: #050a14;
@@ -233,6 +234,48 @@ body {
     color: #050a14;
 }
 
+.page {
+    position: relative;
+    padding: 80px 0;
+    background-color: #050a14;
+    min-height: 520px;
+    overflow: hidden;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+            linear-gradient(#ffffff08 1px, transparent 1px),
+            linear-gradient(90deg, #ffffff08 1px, transparent 1px);
+    background-size: 36px 36px;
+    pointer-events: none;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    color: #ffffff;
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.page-description {
+    max-width: 780px;
+    color: #7f8aa3;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
 .footer {
     background: #030812;
     color: #7f8aa3;
@@ -251,6 +294,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 @media (max-width: 800px) {
     .devices-grid {

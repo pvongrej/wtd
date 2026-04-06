@@ -30,7 +30,7 @@ body {
 
 .header-title {
     color: #f5a623;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 2px;
     font-weight: normal;
 }
@@ -44,7 +44,7 @@ body {
 .navigation a {
     color: #7f8aa3;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 12px 8px;
@@ -91,7 +91,7 @@ body {
 
 .main-title {
     color: #ffffff;
-    font-size: 72px;
+    font-size: 60px;
     line-height: 1.05;
     font-weight: bold;
     margin-bottom: 24px;
@@ -279,7 +279,7 @@ body {
 .footer {
     background: #030812;
     color: #7f8aa3;
-    font-size: 16px;
+    font-size: 12px;
     padding: 18px 20px;
     border-top: 1px solid #ffffff14;
     text-transform: uppercase;

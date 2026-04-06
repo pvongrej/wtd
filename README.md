@@ -13,9 +13,25 @@ to modern smartphones.
 ## Features
 
 - responsive homepage layout
-- hero section with background image and statistics
+- main section with background image and statistics
 - navigation menu with hover and active states
 - current and planned device overview
+- reusable page layout for secondary pages
+- grid-based background for subpages
+- consistent typography and spacing system
+
+---
+
+## Pages
+
+- Home
+- Timeline
+- Era
+- Brands
+- Gallery
+- About
+
+*(Secondary pages currently contain placeholder content and are under development.)*
 
 ---
 
@@ -29,6 +45,11 @@ to modern smartphones.
 ## Project Structure
 
 - `index.html` – homepage
+- `timeline.html` – chronological overview
+- `era.html` – device eras
+- `brands.html` – brand comparison
+- `gallery.html` – visual archive
+- `about.html` – project information
 - `css/styles.css` – main styles
 - `images/` – assets and background images
 

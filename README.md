@@ -19,6 +19,7 @@ to modern smartphones.
 - reusable page layout for secondary pages
 - grid-based background for subpages
 - consistent typography and spacing system
+- custom favicon for consistent branding
 
 ---
 

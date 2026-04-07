@@ -285,6 +285,55 @@ body {
     margin-bottom: 16px;
 }
 
+.timeline-section {
+    margin-top: 0px;
+}
+
+.timeline-list {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-list::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ffffff14;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    width: 8px;
+    height: 8px;
+    background-color: #f5a623;
+    border-radius: 50%;
+}
+
+.timeline-year {
+    color: #f5a623;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    min-width: 60px;
+}
+
+.timeline-device {
+    color: #eaeaea;
+    font-size: 16px;
+}
+
 .footer {
     background: #030812;
     color: #7f8aa3;
@@ -301,6 +350,8 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
+
+
 
 /* phone optimalization */
 @media (max-width: 800px) {

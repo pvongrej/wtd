@@ -20,6 +20,7 @@ to modern smartphones.
 - grid-based background for subpages
 - consistent typography and spacing system
 - custom favicon for consistent branding
+- mobile navigation using a CSS-only hamburger menu
 
 ---
 

@@ -4,8 +4,8 @@ A web project created for the
 **Web Technologies and Design (WTD)** course
 at Pan-European University.
 
-This project presents a personal timeline of mobile devices
-used between **1999 and 2024**, from early feature phones
+The project presents a personal timeline of mobile devices
+I have used between **1998 and 2024**, from early feature phones
 to modern smartphones.
 
 ---
@@ -16,6 +16,9 @@ to modern smartphones.
 - main section with background image and statistics
 - navigation menu with hover and active states
 - current and planned device overview
+- timeline with styled chronological items
+- phone data stored in a JSON file
+- phone table loaded dynamically with AJAX using `fetch`
 - reusable page layout for secondary pages
 - grid-based background for subpages
 - consistent typography and spacing system
@@ -33,7 +36,7 @@ to modern smartphones.
 - Gallery
 - About
 
-*(Secondary pages currently contain placeholder content and are under development.)*
+The Timeline page includes a chronological phone list and a data table loaded from JSON. Other secondary pages are still under development.
 
 ---
 
@@ -41,18 +44,22 @@ to modern smartphones.
 
 - HTML5
 - CSS3
+- JavaScript
+- JSON
+- AJAX using `fetch`
 
 ---
 
 ## Project Structure
 
 - `index.html` – homepage
-- `timeline.html` – chronological overview
+- `timeline.html` – chronological overview and JSON data table
 - `era.html` – device eras
 - `brands.html` – brand comparison
 - `gallery.html` – visual archive
 - `about.html` – project information
 - `css/styles.css` – main styles
+- `data/phones.json` – phone data used by the Timeline page
 - `images/` – assets and background images
 
 ---
@@ -65,5 +72,5 @@ https://pvongrej.github.io/wtd/
 
 ## Author
 
-Peter Vongrej
+Peter Vongrej  
 2026

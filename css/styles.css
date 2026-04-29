@@ -11,15 +11,13 @@ body {
     line-height: 1.5;
 }
 
-/* responsive media */
+/* images and video should not overflow */
 img,
 video,
 iframe {
     max-width: 100%;
     height: auto;
 }
-
-/* header */
 
 .header {
     background-color: #030812;
@@ -53,13 +51,14 @@ a.header-title {
     text-decoration: none;
 }
 
-/* hidden checkbox */
+/* checkbox used to toggle nav on mobile */
 .menu-checkbox {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
+/* hamburger icon */
 .menu-button {
     display: flex;
     width: 44px;
@@ -81,7 +80,7 @@ a.header-title {
     border-radius: 2px;
 }
 
-/* mobile default */
+/* nav is hidden by default on mobile, shown when checkbox is checked */
 .navigation {
     display: none;
     width: 100%;
@@ -117,6 +116,7 @@ a.header-title {
     border-radius: 6px;
 }
 
+/* keyboard focus styles */
 .menu-button:focus-visible,
 .navigation a:focus-visible,
 .devices-card-button:focus-visible {
@@ -128,8 +128,6 @@ a.header-title {
 .menu-checkbox:checked ~ .navigation {
     display: flex;
 }
-
-/* main */
 
 .main {
     padding: 20px 0 10px 0;
@@ -168,10 +166,11 @@ a.header-title {
     max-width: 900px;
     color: #7f8aa3;
     font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 20px;
+    line-height: 1.4;
+    margin-bottom: 8px;
 }
 
+/* quick stats bar */
 .main-stats {
     display: flex;
     flex-direction: column;
@@ -211,8 +210,6 @@ a.header-title {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
-/* devices */
 
 .devices {
     padding: 10px 0;
@@ -268,6 +265,7 @@ a.header-title {
     margin-bottom: 20px;
 }
 
+/* button pushed to bottom of card with margin-top auto */
 .devices-card-button {
     display: inline-block;
     color: #f5a623;
@@ -290,7 +288,6 @@ a.header-title {
     outline: none;
 }
 
-/* page */
 
 .page {
     position: relative;
@@ -299,6 +296,7 @@ a.header-title {
     overflow: hidden;
 }
 
+/* subtle grid overlay */
 .page::before {
     content: "";
     position: absolute;
@@ -330,13 +328,32 @@ a.header-title {
     color: #7f8aa3;
     font-size: 14px;
     line-height: 1.8;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
-/* timeline */
+
 
 .timeline-section {
-    margin-top: 1px;
+    position: relative;
+    padding: 0px 0 0px 0;
+    background-color: #050a14;
+    overflow: hidden;
+}
+
+.timeline-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+            linear-gradient(#ffffff08 1px, transparent 1px),
+            linear-gradient(90deg, #ffffff08 1px, transparent 1px);
+    background-size: 36px 36px;
+    pointer-events: none;
+}
+
+.timeline-section .page-container {
+    position: relative;
+    z-index: 1;
 }
 
 .timeline-list {
@@ -344,6 +361,7 @@ a.header-title {
     padding-left: 40px;
 }
 
+/* vertical line */
 .timeline-list::before {
     content: "";
     position: absolute;
@@ -362,6 +380,7 @@ a.header-title {
     padding: 10px 0;
 }
 
+/* dot on the line */
 .timeline-item::before {
     content: "";
     position: absolute;
@@ -381,10 +400,63 @@ a.header-title {
 
 .timeline-device {
     color: #eaeaea;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-/* footer */
+
+
+.table-wrapper {
+    margin-top: 20px;
+    overflow-x: auto;
+    border: 1px solid #ffffff14;
+    border-radius: 8px;
+    background-color: #0b1220;
+}
+
+.phones-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+.phones-table th,
+.phones-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff14;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.phones-table th {
+    color: #f5a623;
+    background-color: #101827;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+
+.phones-table td {
+    color: #eaeaea;
+}
+
+.phones-table tbody tr:hover {
+    background-color: #ffffff05;
+}
+
+#load-data-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#load-data-button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+
 
 .footer {
     background: #030812;
@@ -417,6 +489,7 @@ a.header-title {
         flex: 0 0 auto;
     }
 
+    /* hide hamburger on desktop */
     .menu-button {
         display: none;
     }
@@ -445,6 +518,7 @@ a.header-title {
         font-size: 44px;
     }
 
+    /* stats become horizontal row */
     .main-stats {
         flex-direction: row;
     }
@@ -460,5 +534,15 @@ a.header-title {
 
     .devices-grid {
         flex-direction: row;
+    }
+
+    .phones-table th,
+    .phones-table td {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    .phones-table th {
+        font-size: 11px;
     }
 }

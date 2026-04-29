@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Peter Vongrej - My Phone Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Phone Journey</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
@@ -12,7 +12,9 @@
 
 <header class="header">
     <div class="header-container">
-        <div class="header-title">My Phone Journey</div>
+        <div class="header-title">
+            <a href="index.html">My Phone Journey</a>
+        </div>
 
         <input type="checkbox" id="menu-toggle" class="menu-checkbox">
 
@@ -44,14 +46,12 @@
             </h1>
 
             <p class="page-description">
-                This timeline presents a complete chronological overview of every mobile phone I have owned.
-                Each device reflects not only a specific period of my life, but also a stage in the evolution
-                of mobile technology - from simple feature phones to modern smartphones.
-
-                Beyond hardware upgrades, this journey captures changing design trends, performance leaps,
-                and the shifting ecosystems that shaped how we communicate and interact with technology.
+                A personal timeline of the phones I have used over the years, from my first simple feature phones to early Android devices and modern Samsung flagships. It shows how mobile phones slowly changed from basic tools for calls and messages into the everyday devices we rely on today.
             </p>
 
+            <p class="page-description">
+                Looking back at the list, it also says a lot about my own habits. I did not change phones every few months, but usually kept each one for a while, with a new upgrade roughly every couple of years.
+            </p>
         </div>
     </section>
 
@@ -132,6 +132,39 @@
             </div>
         </div>
     </section>
+
+    <section class="page">
+        <div class="page-container">
+
+            <button id="load-data-button" class="devices-card-button" type="button">
+                Load phone data
+            </button>
+
+            <div class="table-wrapper">
+                <table class="phones-table">
+                    <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                        <th>OS</th>
+                        <th>Network</th>
+                        <th>Era</th>
+                        <th>Camera</th>
+                        <th>Touch</th>
+                        <th>BT</th>
+                    </tr>
+                    </thead>
+                    <tbody id="phones-table-body">
+                    <tr>
+                        <td colspan="9">No data loaded yet.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <footer class="footer">
@@ -139,6 +172,54 @@
         <p>© 2026 Peter Vongrej (Web Technologies and Design)</p>
     </div>
 </footer>
+
+<script>
+    // aligned with common w3schools fetch api examples
+    document.getElementById("load-data-button").addEventListener("click", function () {
+
+        fetch("data/phones.json")
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.json();
+            })
+            .then(function (data) {
+                var tableBody = document.getElementById("phones-table-body");
+                tableBody.innerHTML = "";
+
+                data.brands.forEach(function (brand) {
+                    brand.phones.forEach(function (phone) {
+                        var row = document.createElement("tr");
+
+                        row.innerHTML = `
+                            <td>${brand.name}</td>
+                            <td>${phone.model}</td>
+                            <td>${phone.details.year}</td>
+                            <td>${phone.details.os}</td>
+                            <td>${phone.details.network}</td>
+                            <td>${phone.details.era}</td>
+                            <td>${phone.details.features.camera ? "Yes" : "No"}</td>
+                            <td>${phone.details.features.touchscreen ? "Yes" : "No"}</td>
+                            <td>${phone.details.features.bluetooth ? "Yes" : "No"}</td>
+                        `;
+
+                        tableBody.appendChild(row);
+                    });
+                });
+
+                document.getElementById("load-data-button").textContent = "Data loaded";
+                document.getElementById("load-data-button").disabled = true;
+            })
+            .catch(function (error) {
+                document.getElementById("phones-table-body").innerHTML =
+                    "<tr><td colspan='9'>Error loading data.</td></tr>";
+
+                console.error(error);
+            });
+
+    });
+</script>
 
 </body>
 </html>

@@ -1,0 +1,240 @@
+{
+  "brands": [
+    {
+      "name": "Alcatel",
+      "phones": [
+        {
+          "model": "One Touch Club+",
+          "details": {
+            "year": 1998,
+            "os": "Proprietary",
+            "network": "GSM",
+            "era": "First Mobile Phones",
+            "features": {
+              "camera": false,
+              "touchscreen": false,
+              "bluetooth": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ericsson",
+      "phones": [
+        {
+          "model": "T10",
+          "details": {
+            "year": 2000,
+            "os": "Proprietary",
+            "network": "GSM",
+            "era": "First Mobile Phones",
+            "features": {
+              "camera": false,
+              "touchscreen": false,
+              "bluetooth": false
+            }
+          }
+        },
+        {
+          "model": "T28s",
+          "details": {
+            "year": 2002,
+            "os": "Proprietary",
+            "network": "GSM",
+            "era": "First Mobile Phones",
+            "features": {
+              "camera": false,
+              "touchscreen": false,
+              "bluetooth": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nokia",
+      "phones": [
+        {
+          "model": "6310i",
+          "details": {
+            "year": 2004,
+            "os": "Series 40",
+            "network": "GSM",
+            "era": "Golden Age of Button Phones",
+            "features": {
+              "camera": false,
+              "touchscreen": false,
+              "bluetooth": true
+            }
+          }
+        },
+        {
+          "model": "6230",
+          "details": {
+            "year": 2006,
+            "os": "Series 40",
+            "network": "GSM",
+            "era": "Golden Age of Button Phones",
+            "features": {
+              "camera": true,
+              "touchscreen": false,
+              "bluetooth": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sony Ericsson",
+      "phones": [
+        {
+          "model": "K610i",
+          "details": {
+            "year": 2008,
+            "os": "Proprietary",
+            "network": "3G",
+            "era": "Pre-Smartphone Experimentation",
+            "features": {
+              "camera": true,
+              "touchscreen": false,
+              "bluetooth": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "HP",
+      "phones": [
+        {
+          "model": "iPAQ hx4700",
+          "details": {
+            "year": 2009,
+            "os": "Windows Mobile",
+            "network": "Wi-Fi / GSM",
+            "era": "Pre-Smartphone Experimentation",
+            "features": {
+              "camera": false,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "HTC",
+      "phones": [
+        {
+          "model": "One V",
+          "details": {
+            "year": 2011,
+            "os": "Android",
+            "network": "3G",
+            "era": "Early Android Era",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Google",
+      "phones": [
+        {
+          "model": "Nexus 5",
+          "details": {
+            "year": 2013,
+            "os": "Android",
+            "network": "4G",
+            "era": "Android as the Main Device",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Samsung",
+      "phones": [
+        {
+          "model": "Galaxy S6",
+          "details": {
+            "year": 2015,
+            "os": "Android",
+            "network": "4G",
+            "era": "Android as the Main Device",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        },
+        {
+          "model": "Galaxy S9",
+          "details": {
+            "year": 2018,
+            "os": "Android",
+            "network": "4G",
+            "era": "Mature Smartphone Era",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        },
+        {
+          "model": "Galaxy S20",
+          "details": {
+            "year": 2020,
+            "os": "Android",
+            "network": "5G",
+            "era": "Mature Smartphone Era",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        },
+        {
+          "model": "Galaxy S21",
+          "details": {
+            "year": 2022,
+            "os": "Android",
+            "network": "5G",
+            "era": "Modern 5G Flagships",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        },
+        {
+          "model": "Galaxy S24",
+          "details": {
+            "year": 2024,
+            "os": "Android",
+            "network": "5G",
+            "era": "Modern 5G Flagships",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

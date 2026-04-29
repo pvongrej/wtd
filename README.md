@@ -19,7 +19,8 @@ to modern smartphones.
 - timeline with styled chronological items
 - phone data stored in a JSON file
 - phone table loaded dynamically with AJAX using `fetch`
-- era page with flexible cards describing major phone periods
+- Era page with responsive cards describing major phone periods
+- Brands page with responsive cards describing manufacturers and personal experience
 - reusable page layout for secondary pages
 - grid-based background for subpages
 - consistent typography and spacing system
@@ -39,7 +40,9 @@ to modern smartphones.
 
 The Timeline page includes a chronological phone list and a data table loaded from JSON.  
 
-The Era page divides the phone history into several technology periods using a responsive card layout.
+The Era page divides the phone history into several technology periods using a responsive card layout.  
+
+The Brands page presents the manufacturers behind the devices and describes their role in the overall phone journey.  
 
 Other secondary pages are still under development.
 
@@ -61,7 +64,7 @@ Other secondary pages are still under development.
 - `index.html` – homepage
 - `timeline.html` – chronological overview and JSON data table
 - `era.html` – technology eras shown as responsive cards
-- `brands.html` – brand comparison
+- `brands.html` – manufacturers and personal brand experience
 - `gallery.html` – visual archive
 - `about.html` – project information
 - `css/styles.css` – main styles

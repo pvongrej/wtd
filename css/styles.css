@@ -324,7 +324,7 @@ a.header-title {
 }
 
 .page-description {
-    max-width: 780px;
+    max-width: 1100px;
     color: #7f8aa3;
     font-size: 14px;
     line-height: 1.8;
@@ -444,6 +444,14 @@ a.header-title {
     background-color: #ffffff05;
 }
 
+.era-grid {
+    flex-wrap: wrap;
+}
+
+.era-grid .devices-card {
+    min-width: 260px;
+}
+
 #load-data-button {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -544,5 +552,10 @@ a.header-title {
 
     .phones-table th {
         font-size: 11px;
+    }
+
+
+    .era-grid .devices-card {
+    flex: 1 1 300px;
     }
 }

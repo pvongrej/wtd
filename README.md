@@ -81,6 +81,7 @@ The About page contains project information and a contact form validated with Ja
 - `images/` – assets and background images
 - `js/gallery.js` – JavaScript for the Gallery lightbox
 - `js/contact.js` – JavaScript validation for the About page contact form
+- `docs/figma_mockup.pdf` – Figma mockup
 
 ---
 
@@ -91,7 +92,8 @@ The website is published using GitHub Pages:
 https://pvongrej.github.io/wtd/
 
 The project includes a Figma mockup used as a visual design reference:
-[Open Figma Mockup](docs/figma_mockup.pdf)
+
+[Figma Mockup](docs/figma_mockup.pdf)
 
 
 ---

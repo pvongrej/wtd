@@ -25,7 +25,7 @@
         </label>
 
         <nav class="navigation">
-            <a href="index.html" >Home</a>
+            <a href="index.html">Home</a>
             <a href="timeline.html">Timeline</a>
             <a href="era.html">Era</a>
             <a href="brands.html">Brands</a>
@@ -39,19 +39,100 @@
     <section class="page">
         <div class="page-container">
 
-            <p class="main-overline">Get in touch</p>
+            <p class="main-overline">Project information</p>
 
             <h1 class="page-title">
-                Contact
+                About
             </h1>
 
             <p class="page-description">
-                If you have questions, feedback, or would like to share your own mobile journey, feel free to reach out.
+                This website was created as a semester project for the Web Technologies and Design course.
+                The goal was to design and build a small web portal using HTML, CSS, JavaScript, JSON, AJAX, responsive layout and client-side form validation.
             </p>
+        </div>
+    </section>
 
-            <p class="page-description">
-                Contact options and details will be added soon.
-            </p>
+    <section class="devices">
+        <div class="devices-container">
+
+            <div class="about-grid">
+
+                <div class="devices-card">
+                    <h3 class="devices-card-title">Project feedback</h3>
+
+                    <form name="contactForm" class="contact-form" onsubmit="return validateForm()" novalidate>
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <p class="form-error" id="name-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                            <p class="form-error" id="email-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">Topic</label>
+                            <select id="topic" name="topic">
+                                <option value="">Choose a topic</option>
+                                <option value="design">Design</option>
+                                <option value="content">Content</option>
+                                <option value="gallery">Gallery</option>
+                                <option value="technical">Technical issue</option>
+                            </select>
+                            <p class="form-error" id="topic-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Feedback type</label>
+
+                            <div class="form-options">
+                                <label>
+                                    <input type="radio" name="feedbackType" value="suggestion">
+                                    Suggestion
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="feedbackType" value="question">
+                                    Question
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="feedbackType" value="bug">
+                                    Bug report
+                                </label>
+                            </div>
+
+                            <p class="form-error" id="type-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+                            <p class="form-error" id="message-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agreement" name="agreement">
+                                I agree that this form is used only for project demonstration purposes.
+                            </label>
+                            <p class="form-error" id="agreement-error"></p>
+                        </div>
+
+                        <button type="submit" class="devices-card-button">
+                            Send feedback
+                        </button>
+
+                        <p id="form-success" class="form-success"></p>
+
+                    </form>
+                </div>
+
+            </div>
 
         </div>
     </section>
@@ -62,6 +143,8 @@
         <p>© 2026 Peter Vongrej (Web Technologies and Design)</p>
     </div>
 </footer>
+
+<script src="js/contact.js"></script>
 
 </body>
 </html>

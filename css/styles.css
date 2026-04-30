@@ -295,18 +295,6 @@ a.header-title {
     overflow: hidden;
 }
 
-/* subtle grid overlay */
-.page::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-            linear-gradient(#ffffff08 1px, transparent 1px),
-            linear-gradient(90deg, #ffffff08 1px, transparent 1px);
-    background-size: 36px 36px;
-    pointer-events: none;
-}
-
 .page-container {
     width: 90%;
     max-width: 1100px;
@@ -337,16 +325,7 @@ a.header-title {
     overflow: hidden;
 }
 
-.timeline-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-            linear-gradient(#ffffff08 1px, transparent 1px),
-            linear-gradient(90deg, #ffffff08 1px, transparent 1px);
-    background-size: 36px 36px;
-    pointer-events: none;
-}
+
 
 .timeline-section .page-container {
     position: relative;
@@ -604,6 +583,84 @@ a.header-title {
     font-size: 13px;
 }
 
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    color: #eaeaea;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background-color: #050a14;
+    color: #eaeaea;
+    border: 1px solid #ffffff14;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #f5a623;
+}
+
+.form-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-options label,
+.checkbox-label {
+    color: #7f8aa3;
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.form-options input,
+.checkbox-label input {
+    width: auto;
+    margin-right: 6px;
+}
+
+.form-error {
+    color: #ff6b6b;
+    font-size: 12px;
+    min-height: 16px;
+}
+
+.form-success {
+    color: #f5a623;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
 .footer {
     background: #030812;
     color: #7f8aa3;
@@ -702,5 +759,19 @@ a.header-title {
 
     .gallery-card img {
         height: 260px;
+    }
+
+
+    .about-grid {
+         flex-direction: row;
+    }
+
+    .about-grid .devices-card {
+        flex: 1;
+    }
+
+    .form-options {
+        flex-direction: row;
+        gap: 16px;
     }
 }

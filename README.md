@@ -28,8 +28,8 @@ to modern smartphones.
 - mobile navigation using a CSS-only hamburger menu
 - gallery page with responsive image layout and lightbox preview
 - javascript lightbox based on the w3schools modal gallery example
-- About page with a JavaScript-validated contact form
-- Figma mockup linked from the project documentation
+- about page with a JavaScript-validated contact form
+- figma mockup linked from the project documentation
 
 ---
 

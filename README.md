@@ -28,6 +28,8 @@ to modern smartphones.
 - mobile navigation using a CSS-only hamburger menu
 - gallery page with responsive image layout and lightbox preview
 - javascript lightbox based on the w3schools modal gallery example
+- About page with a JavaScript-validated contact form
+- Figma mockup linked from the project documentation
 
 ---
 
@@ -48,7 +50,7 @@ The Brands page presents the manufacturers behind the devices and describes thei
 
 The Gallery page displays phone images in a responsive layout and includes a lightbox preview based on the W3Schools modal gallery example.
 
-Other secondary pages are still under development.
+The About page contains project information and a contact form validated with JavaScript.
 
 ---
 
@@ -62,6 +64,7 @@ Other secondary pages are still under development.
 - Flexbox layout
 - CSS Grid
 - Lightbox image preview
+- JavaScript form validation
 
 ---
 
@@ -77,6 +80,7 @@ Other secondary pages are still under development.
 - `data/phones.json` – phone data used by the Timeline page
 - `images/` – assets and background images
 - `js/gallery.js` – JavaScript for the Gallery lightbox
+- `js/contact.js` – JavaScript validation for the About page contact form
 
 ---
 
@@ -85,6 +89,10 @@ Other secondary pages are still under development.
 The website is published using GitHub Pages:
 
 https://pvongrej.github.io/wtd/
+
+The project includes a Figma mockup used as a visual design reference:
+[Open Figma Mockup](docs/figma_mockup.pdf)
+
 
 ---
 

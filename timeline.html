@@ -190,23 +190,23 @@
                 return response.json();
             })
             .then(function (data) {
-                var tableBody = document.getElementById("phones-table-body");
+                const tableBody = document.getElementById("phones-table-body");
                 tableBody.innerHTML = "";
 
-                data.brands.forEach(function (brand) {
-                    brand.phones.forEach(function (phone) {
-                        var row = document.createElement("tr");
+                data["brands"].forEach(function (brand) {
+                    brand["phones"].forEach(function (phone) {
+                        const row = document.createElement("tr");
 
                         row.innerHTML = `
-                            <td>${brand.name}</td>
-                            <td>${phone.model}</td>
-                            <td>${phone.details.year}</td>
-                            <td>${phone.details.os}</td>
-                            <td>${phone.details.network}</td>
-                            <td>${phone.details.era}</td>
-                            <td>${phone.details.features.camera ? "Yes" : "No"}</td>
-                            <td>${phone.details.features.touchscreen ? "Yes" : "No"}</td>
-                            <td>${phone.details.features.bluetooth ? "Yes" : "No"}</td>
+                            <td>${brand["name"]}</td>
+                            <td>${phone["model"]}</td>
+                            <td>${phone["details"]["year"]}</td>
+                            <td>${phone["details"]["os"]}</td>
+                            <td>${phone["details"]["network"]}</td>
+                            <td>${phone["details"]["era"]}</td>
+                            <td>${phone["details"]["features"]["camera"] ? "Yes" : "No"}</td>
+                            <td>${phone["details"]["features"]["touchscreen"] ? "Yes" : "No"}</td>
+                            <td>${phone["details"]["features"]["bluetooth"] ? "Yes" : "No"}</td>
                         `;
 
                         tableBody.appendChild(row);

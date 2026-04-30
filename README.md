@@ -19,13 +19,15 @@ to modern smartphones.
 - timeline with styled chronological items
 - phone data stored in a JSON file
 - phone table loaded dynamically with AJAX using `fetch`
-- Era page with responsive cards describing major phone periods
-- Brands page with responsive cards describing manufacturers and personal experience
+- era page with responsive cards describing major phone periods
+- brands page with responsive cards describing manufacturers and personal experience
 - reusable page layout for secondary pages
 - grid-based background for subpages
 - consistent typography and spacing system
 - custom favicon for consistent branding
 - mobile navigation using a CSS-only hamburger menu
+- gallery page with responsive image layout and lightbox preview
+- javascript lightbox based on the w3schools modal gallery example
 
 ---
 
@@ -42,7 +44,9 @@ The Timeline page includes a chronological phone list and a data table loaded fr
 
 The Era page divides the phone history into several technology periods using a responsive card layout.  
 
-The Brands page presents the manufacturers behind the devices and describes their role in the overall phone journey.  
+The Brands page presents the manufacturers behind the devices and describes their role in the overall phone journey. 
+
+The Gallery page displays phone images in a responsive layout and includes a lightbox preview based on the W3Schools modal gallery example.
 
 Other secondary pages are still under development.
 
@@ -56,6 +60,8 @@ Other secondary pages are still under development.
 - JSON
 - AJAX using `fetch`
 - Flexbox layout
+- CSS Grid
+- Lightbox image preview
 
 ---
 
@@ -65,15 +71,18 @@ Other secondary pages are still under development.
 - `timeline.html` – chronological overview and JSON data table
 - `era.html` – technology eras shown as responsive cards
 - `brands.html` – manufacturers and personal brand experience
-- `gallery.html` – visual archive
+- `gallery.html` – visual archive with lightbox image preview
 - `about.html` – project information
 - `css/styles.css` – main styles
 - `data/phones.json` – phone data used by the Timeline page
 - `images/` – assets and background images
+- `js/gallery.js` – JavaScript for the Gallery lightbox
 
 ---
 
 ## Live Demo
+
+The website is published using GitHub Pages:
 
 https://pvongrej.github.io/wtd/
 

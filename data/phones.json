@@ -124,6 +124,26 @@
       ]
     },
     {
+      "name": "Asus",
+      "phones": [
+        {
+          "model": "P750",
+          "details": {
+            "year": 2009,
+            "os": "Windows Mobile",
+            "network": "3G",
+            "era": "Pre Smartphone Experimentation",
+            "features": {
+              "camera": true,
+              "touchscreen": true,
+              "bluetooth": true
+            }
+          }
+        }
+      ]
+    },
+
+    {
       "name": "HTC",
       "phones": [
         {

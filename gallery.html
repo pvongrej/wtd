@@ -25,7 +25,7 @@
         </label>
 
         <nav class="navigation">
-            <a href="index.html" >Home</a>
+            <a href="index.html">Home</a>
             <a href="timeline.html">Timeline</a>
             <a href="era.html">Era</a>
             <a href="brands.html">Brands</a>
@@ -46,23 +46,210 @@
             </h1>
 
             <p class="page-description">
-                This gallery will showcase a visual collection of the devices I have owned throughout the years.
-                Each image represents a specific moment in time and a step in the evolution of mobile technology.
-            </p>
-
-            <p class="page-description">
-                The image collection is currently being prepared.
+                A small visual archive of phones from my timeline.
+                Click any image to open a larger preview in a gallery.
             </p>
 
         </div>
     </section>
+
+    <section class="devices">
+        <div class="devices-container">
+
+            <div class="gallery-grid">
+
+                <div class="gallery-card">
+                    <img src="images/phone-alcatel-one-club.png" alt="Alcatel One Touch Club+" onclick="openModal();currentSlide(1)">
+                    <h3>Alcatel One Touch Club+</h3>
+                    <p>1998 - First phone</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-ericsson-t10.png" alt="Ericsson T10" onclick="openModal();currentSlide(2)">
+                    <h3>Ericsson T10</h3>
+                    <p>2000 - Classic GSM phone</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-ericsson-t28.png" alt="Ericsson T28s" onclick="openModal();currentSlide(3)">
+                    <h3>Ericsson T28s</h3>
+                    <p>2002 - Compact design</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-nokia-6310i.png" alt="Nokia 6310i" onclick="openModal();currentSlide(4)">
+                    <h3>Nokia 6310i</h3>
+                    <p>2004 - Reliable Nokia</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-nokia-6230.png" alt="Nokia 6230" onclick="openModal();currentSlide(5)">
+                    <h3>Nokia 6230</h3>
+                    <p>2006 - Button phone peak</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-ericsson-k610i.png" alt="Sony Ericsson K610i" onclick="openModal();currentSlide(6)">
+                    <h3>Sony Ericsson K610i</h3>
+                    <p>2008 - 3G multimedia phone</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-hp-ipaq-hx4700.png" alt="HP iPAQ hx4700" onclick="openModal();currentSlide(7)">
+                    <h3>HP iPAQ hx4700</h3>
+                    <p>2009 - PDA experiment</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-asus-p750.png" alt="Asus P750" onclick="openModal();currentSlide(8)">
+                    <h3>Asus P750</h3>
+                    <p>2009 - Windows Mobile experiment</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-htc-one-v.png" alt="HTC One V" onclick="openModal();currentSlide(9)">
+                    <h3>HTC One V</h3>
+                    <p>2011 - Early Android</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-google-nexus-5.png" alt="Google Nexus 5" onclick="openModal();currentSlide(10)">
+                    <h3>Google Nexus 5</h3>
+                    <p>2013 - Clean Android</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-samsung-s6.png" alt="Samsung Galaxy S6" onclick="openModal();currentSlide(11)">
+                    <h3>Samsung Galaxy S6</h3>
+                    <p>2015 - First Galaxy flagship</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-samsung-s9.png" alt="Samsung Galaxy S9" onclick="openModal();currentSlide(12)">
+                    <h3>Samsung Galaxy S9</h3>
+                    <p>2018 - Mature smartphone</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-samsung-s20.png" alt="Samsung Galaxy S20" onclick="openModal();currentSlide(13)">
+                    <h3>Samsung Galaxy S20</h3>
+                    <p>2020 - 5G transition</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-samsung-s21.png" alt="Samsung Galaxy S21" onclick="openModal();currentSlide(14)">
+                    <h3>Samsung Galaxy S21</h3>
+                    <p>2022 - Modern Galaxy</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/phone-samsung-s24.png" alt="Samsung Galaxy S24" onclick="openModal();currentSlide(15)">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p>2024 - Current device</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </main>
+
+<div id="gallery-lightbox" class="lightbox-modal">
+    <span class="lightbox-close" onclick="closeModal()">&times;</span>
+
+    <div class="lightbox-content">
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">1 / 15</div>
+            <img src="images/phone-alcatel-one-club.png" alt="Alcatel One Touch Club+">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">2 / 15</div>
+            <img src="images/phone-ericsson-t10.png" alt="Ericsson T10">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">3 / 15</div>
+            <img src="images/phone-ericsson-t28.png" alt="Ericsson T28s">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">4 / 15</div>
+            <img src="images/phone-nokia-6310i.png" alt="Nokia 6310i">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">5 / 15</div>
+            <img src="images/phone-nokia-6230.png" alt="Nokia 6230">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">6 / 15</div>
+            <img src="images/phone-ericsson-k610i.png" alt="Sony Ericsson K610i">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">7 / 15</div>
+            <img src="images/phone-hp-ipaq-hx4700.png" alt="HP iPAQ hx4700">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">8 / 15</div>
+            <img src="images/phone-asus-p750.png" alt="Asus P750">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">9 / 15</div>
+            <img src="images/phone-htc-one-v.png" alt="HTC One V">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">10 / 15</div>
+            <img src="images/phone-google-nexus-5.png" alt="Google Nexus 5">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">11 / 15</div>
+            <img src="images/phone-samsung-s6.png" alt="Samsung Galaxy S6">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">12 / 15</div>
+            <img src="images/phone-samsung-s9.png" alt="Samsung Galaxy S9">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">13 / 15</div>
+            <img src="images/phone-samsung-s20.png" alt="Samsung Galaxy S20">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">14 / 15</div>
+            <img src="images/phone-samsung-s21.png" alt="Samsung Galaxy S21">
+        </div>
+
+        <div class="lightbox-slide">
+            <div class="lightbox-number">15 / 15</div>
+            <img src="images/phone-samsung-s24.png" alt="Samsung Galaxy S24">
+        </div>
+
+        <a class="lightbox-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="lightbox-next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="lightbox-caption-container">
+            <p id="lightbox-caption"></p>
+        </div>
+
+    </div>
+</div>
 
 <footer class="footer">
     <div class="footer-container">
-        <p>© 2026 Peter Vongrej (Web Technologies and Design)</p>
+        <p>� 2026 Peter Vongrej (Web Technologies and Design)</p>
     </div>
 </footer>
+
+<script src="js/gallery.js"></script>
 
 </body>
 </html>
